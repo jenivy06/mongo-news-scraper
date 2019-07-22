@@ -70,7 +70,7 @@ $(function() {
             type: "PUT"
         }).then(function() {
             let newText = $('<div>');
-            newText.text("Article now accessible through your Saved Articles");
+            newText.text("Article saved in your Saved Articles!");
             $('.articleSavedBody').append(newText);
             $('#articleSavedModal').modal('show');
         })
