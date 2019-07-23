@@ -38,7 +38,7 @@ body {
 }
 
 #navbar {
-    background-image: url("https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png");
+    background-color: #d7ccc8;
     padding: 10px 30px 10px 30px;
     padding-top: 10px;
 	font-family: 'Special Elite', cursive;
@@ -56,12 +56,14 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+    background-color: #d7ccc8;
     z-index: 2;
 }
 
 .card-header {
-    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+    background-image: url(https://cdn.pixabay.com/photo/2014/09/15/22/23/fountain-pen-447576_960_720.jpg);
+    opacity: 0.9;
+    background-size: cover;
 }
 
 .card {
@@ -74,7 +76,8 @@ body {
 
 .headlineLink {
     text-decoration: none;
-    color: #4e342e;
+    color: black;
+    font-weight: 650;
 }
 
 .headlineLink:hover {
@@ -98,6 +101,7 @@ p {
     margin-top: 10px;
     padding: 10px;
     font-family: 'Inconsolata', monospace;
+    background-color: #8d6e63;
 }
 
 #scrapeArticlesButton {
@@ -108,9 +112,9 @@ p {
 }
 
 .modal-header {
-    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+    background-image: url(https://cdn.pixabay.com/photo/2018/03/31/01/00/background-3277101_960_720.jpg);
     color: white;
-    font-family: 'Special Elite', cursive;
+    font-family: 'DM Serif Display', serif;
 }
 
 .buttonRow {
@@ -134,4 +138,8 @@ p {
 
 .noteCardBody {
     color: black
+}
+
+.summary {
+    text-indent: 50px;
 }
