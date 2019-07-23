@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+}
+
+body {
+    background-image: url("../images/lined_paper.png");
+}
+.titleJumbotron {
+    margin: 0px;
+    background: url("https://cdn.pixabay.com/photo/2016/03/10/09/24/typewriter-1248088_960_720.jpg") no-repeat center center; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.headerDivJumbotron {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* background: url("https://cdn.pixabay.com/photo/2018/02/21/12/00/article-3170210_960_720.jpg"); */
+    text-align: center;
+    border: 5px solid black;
+    padding: 20px;
+    background-size: cover;
+    color: white;
+    background-color: #6d4c41;
+}
+
+#headerJumbotron {
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
+    border-bottom: 2px solid black;
+    
+}
+
+#subheaderJumbotron {
+    background: url("https://cdn.pixabay.com/photo/2014/03/25/16/27/sheet-297179_960_720.png");
+    font-family: 'DM Serif Display', serif;
+    font-size: 30px
+}
+
+#navbar {
+    background-image: url("https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png");
+    padding: 10px 30px 10px 30px;
+    padding-top: 10px;
+	font-family: 'Special Elite', cursive;
+    overflow: hidden;
+    height: 50px;
+    color: #6d4c41;
+}
+
+.navLink {
+    color: #6d4c41;
+    margin-right: 50px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+    z-index: 2;
+}
+
+.card-header {
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+}
+
+.card {
+    margin-top: 20px;
+}
+
+.card-body {
+    border: 2px solid black;
+}
+
+.headlineLink {
+    text-decoration: none;
+    color: #4e342e;
+}
+
+.headlineLink:hover {
+    text-decoration: none;
+    color: blue
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.articleImage {
+    width: 100%
+}
+
+.buttonColumn {
+    margin-right: 0px
+}
+
+.saveArticleButton {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+}
+
+#scrapeArticlesButton {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Special Elite', cursive;
+    background-color: #6d4c41;
+}
+
+.modal-header {
+    background-image: url(https://cdn.pixabay.com/photo/2017/10/30/19/24/whiteboard-2903269_960_720.png);
+    color: white;
+    font-family: 'Special Elite', cursive;
+}
+
+.buttonRow {
+    margin-top: 10px
+}
+
+#titleinput,
+#bodyinput {
+    width: 100%
+}
+
+.articleContainer {
+    padding-bottom: 50px;
+    padding-top: 20px
+}
+
+.noteCard {
+    display: block;
+    width: 100%
+}
+
+.noteCardBody {
+    color: black
+}
