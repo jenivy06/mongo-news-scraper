@@ -109,20 +109,25 @@ $(function() {
             noteAdded.addClass('noteAlert');
             noteAdded.text("Note successfully added")
             $('.alertDiv').append(noteAdded);
-            $("#titleinput").val("");
-            $("#bodyinput").val("");
+            let newNoteTitle = $("#titleinput").val();
+            let newNoteBody = $("#bodyinput").val()
+            console.log("Note title: " + newNoteTitle + "Note body: " + newNoteBody);
+            $("#noteTitle").append("Note Title: " + newNoteTitle);
+            $("#noteBody").append("Comments: " + newNoteBody);
         })
-
     });
 
     $('.deleteNoteButton').on("click", function(event) {
+        console.log("button clicked")
+       //$.ajax ({
+        //url: '/api/create/notes/',
+      //  type: 'DELETE',
+       // success: function(result) {
+      //      console.log("note deleted" + result)
+        });
 
-        event.preventDefault();
-
-        console.log("clicked");
-
-
-    });
-
-
+   
 });
+
+
+
