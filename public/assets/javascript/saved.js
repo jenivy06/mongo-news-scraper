@@ -37,6 +37,7 @@ $(function() {
         event.preventDefault();
 
         let articleId = $(this).data("id");
+        $('.noteModalHeader').empty();
         $('.noteModalBody').empty();
         $('.noteAlert').remove();
 
@@ -93,7 +94,7 @@ $(function() {
 
     });
 
-    $('.saveNoteButton').on("click", function(event) {
+    $('.saveNoteButtonSavedPage').on("click", function(event) {
 
         let articleId = $(this).attr("data-id");
 
