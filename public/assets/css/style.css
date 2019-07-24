@@ -111,6 +111,13 @@ p {
     background-color: #8d6e63;
 }
 
+.addNoteButton {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    background-color: #8d6e63;
+}
+
 #scrapeArticlesButton {
     margin-top: 10px;
     padding: 10px;
