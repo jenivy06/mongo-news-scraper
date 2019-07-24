@@ -166,8 +166,8 @@ $(function() {
             let newNoteTitle = $("#titleinput").val();
             let newNoteBody = $("#bodyinput").val()
             console.log("Note title: " + newNoteTitle + "Note body: " + newNoteBody);
-            $("#noteTitle").append("Note Title: " + newNoteTitle);
             $("#noteBody").append("Comments: " + newNoteBody);
+            $("#noteTitle").append("<hr>" + "Note Title: " + newNoteTitle);
         })
     });
     });

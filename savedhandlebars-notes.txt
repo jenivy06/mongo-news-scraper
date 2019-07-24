@@ -44,7 +44,7 @@
                             </div>
 
                             <div class="col-8">
-                                <p>{{summary}}{{date}}</p><br>
+                                <p>{{summary}}</p><br>
                             </div>
                             <div class="col-8">
                                 <p id="noteTitle">{{data-notes}}</p>
@@ -96,8 +96,10 @@
 <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-
-     <div class="modal-body noteModalBody"> 
+        <!--<div class="modal-header noteModalHeader">
+        <p id="previousNotes">Previous Notes: </p>
+      </div>-->
+      <div class="modal-body noteModalBody">
         
       </div>
       <button class='saveNoteButtonSavedPage'>Save Note</button>

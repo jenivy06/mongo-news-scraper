@@ -37,6 +37,7 @@ $(function() {
         event.preventDefault();
 
         let articleId = $(this).data("id");
+        $('.noteModalHeader').empty();
         $('.noteModalBody').empty();
         $('.noteAlert').remove();
 
@@ -44,8 +45,8 @@ $(function() {
             type: "GET"
         }).then(function(result) {
 
-          //  $('.noteModalBody').append("<h2>" + result.headline + "</h2>");
-         //   $('.noteModalBody').append("<ul id='noteList'>")
+            $('.noteModalBody').append("<h2>" + result.headline + "</h2>");
+            $('.noteModalBody').append("<ul id='noteList'>")
 
             let newForm = $('<form>');
             
@@ -66,27 +67,27 @@ $(function() {
 
             // let newButton = $("<button data-id='" + result._id + "' class='saveNoteButton'>Save Note</button>");
 
-            // $('.saveNoteButton').attr("data-id", result._id)
-            // newForm.append(newFormGroup1);
-            // newForm.append(newFormGroup2);
+            $('.saveNoteButton').attr("data-id", result._id)
+            newForm.append(newFormGroup1);
+            newForm.append(newFormGroup2);
             // newForm.append(newButton);
 
-     //       $('.noteModalBody').append(newForm)
+            $('.noteModalBody').append(newForm)
 
-    //         for (let i = 0; i < result.note.length; i ++) {
-    //             let newCard = $('<div class=card>');
-    //             newCard.addClass("noteCard")
-    //             let newCardHeader = $('<div class=card-header>' + result.note[i].title + '</div>');
-    //  //           let newCardBody = $('<div class=card-body>');
-    //             newCardBody.addClass("noteCardBody")
-    //             newCardBody.text(result.note[i].body)
-    //             newCard.append(newCardHeader);
-    //             newCard.append(newCardBody);
-    //             newCard.append("<button class=deleteNoteButton data-id=" + i + ">Delete</button>");
+            for (let i = 0; i < result.note.length; i ++) {
+                let newCard = $('<div class=card>');
+                newCard.addClass("noteCard")
+                let newCardHeader = $('<div class=card-header>' + result.note[i].title + '</div>');
+                let newCardBody = $('<div class=card-body>');
+                newCardBody.addClass("noteCardBody")
+                newCardBody.text(result.note[i].body)
+                newCard.append(newCardHeader);
+                newCard.append(newCardBody);
+                newCard.append("<button class=deleteNoteButton data-id=" + i + ">Delete</button>");
 
-    //             $('.noteModalHeader').append(newCard);
+                $('.noteModalHeader').append(newCard);
                 
-    //         }
+            }
         }).then(
             $('#noteModal').modal('show')
         )
@@ -112,7 +113,7 @@ $(function() {
             let newNoteTitle = $("#titleinput").val();
             let newNoteBody = $("#bodyinput").val()
             console.log("Note title: " + newNoteTitle + "Note body: " + newNoteBody);
-            $("#noteTitle").append("<hr>" + "Note Title: " + newNoteTitle);
+            $("#noteTitle").append("Note Title: " + newNoteTitle);
             $("#noteBody").append("Comments: " + newNoteBody);
         })
     });
@@ -128,3 +129,6 @@ $(function() {
 
    
 });
+
+
+
