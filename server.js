@@ -18,9 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.Promise = Promise;
-mongoose.connect(MONGODB_URI, {
-  // useMongoClient: true
-});
+mongoose.connect(MONGODB_URI);
 
 // db.Headline.create();
 // db.Note.create();

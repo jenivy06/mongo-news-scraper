@@ -37,7 +37,7 @@
         </div>
 
         <div class="col-10 articleColumn">
-            
+
             {{#each articles}}
 
                 <div class="card">
@@ -49,23 +49,35 @@
                             <div class="col-2">
                                 <img class="articleImage" src={{photo}}>
                             </div>
+
+                            <div class="col-8">
+                                <p>{{summary}}{{date}}</p><br>
+                            </div>
                             <br>
-                            <div class="row">
-                            <div class="col-12">
+                            <div class="col-8">
                               <br>
-                                <p class="summary">{{summary}}{{date}}</p>
-                        
+                                <p id="noteTitle">{{data-notes}}</p>
+                                <p id="noteBody">{{data-notes}}</p>
                             </div>
-                            </div>
-                            <div class="col-4 buttonColumn">
-                                <button type="button" class="btn btn-primary saveArticleButton" data-id={{id}}>Save Article</button>
-                                <button type="button" class="btn btn-primary addNoteButton" data-id={{id}}>Add Note</button>
+
+                            <div class="col-2 buttonColumn">
+                                <div class="row buttonRow">
+                                    <div class="col-12">
+                                          <button type="button" class="btn btn-primary deleteSavedArticleButton" data-id={{id}}>Delete Article</button>
+                                    </div>
+                                </div>
+                                <div class="row buttonRow">
+                                    <div class="col-12">
+                                          <button type="button" class="btn btn-primary addNoteButton" data-id={{id}} data-notes={{notes}}>Add Note</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
             {{/each}}
+
         </div>
 
         <div class="col-1">
