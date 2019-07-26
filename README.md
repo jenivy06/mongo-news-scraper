@@ -6,14 +6,14 @@ This web app that lets users view and leave comments on the latest news from NPR
 
 ###### Technologies: 
 
-*Node
-*Express
-*Handlebars
-*Bootstrap
-*jQuery
-*MongoDB
-*Mongoose
-*Cheerio
-*Request-promise
+*Node <br/>
+*Express <br/>
+*Handlebars <br/>
+*Bootstrap <br/>
+*jQuery <br/>
+*MongoDB <br/>
+*Mongoose <br/>
+*Cheerio <br/>
+*Request-promise <br/>
 
 
